@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi Dimensional Array Task</title>
+    <style>
+      table{
+      border:1px solid green;
+    }
+      table th{
+        border:1px solid green;
+      }
+      table td {
+        border:1px solid green;
+      }
+    </style>
 </head>
 <?php 
 echo "<h3>1.)Create Multidimensional array of the following table</h3><br>";
@@ -26,7 +37,7 @@ echo "<h3>1.)Create Multidimensional array of the following table</h3><br>";
                    )
                 );
 
-                $str="<table><tr><td rowspan=3> Time:</td><td colspan=3> Location =".$parent_data[0][0]["Location"]."</td><td colspan=3> Location =".$parent_data[0][1]["Location"]."</td><td colspan=3> Location =".$parent_data[0][2]["Location"]."</td></tr>";
+                $str="<table style='border:1px solid green;'><tr><td rowspan=3> Time:</td><td colspan=3> Location =".$parent_data[0][0]["Location"]."</td><td colspan=3> Location =".$parent_data[0][1]["Location"]."</td><td colspan=3> Location =".$parent_data[0][2]["Location"]."</td></tr>";
                 $str.="<tr><td colspan=3> Item</td><td colspan=3> Item</td><td colspan=3> Item</td></tr>";
                 $str.="<tr><td>Milk</td><td>Egg</td><td>Bread</td><td>Milk</td><td>Egg</td><td>Bread</td><td>Milk</td><td>Egg</td><td>Bread</td></tr>";
 
